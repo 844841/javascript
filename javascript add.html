@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<title>"java script"</title>
+<script type="text/javascript">
+
+function add()
+{
+ var a,b,c;
+ a=Number(document.getElementById("first").value);
+ b=Number(document.getElementById("second").value);
+ if(isNaN(a)&&isNaN(b))
+  {
+   document.writeln("not a number");
+   else
+    c=a+b;
+document.getElementById("answer").value=c;
+}
+ window.alert('Sum of'+a +' and ' +b+'='+c);
+ }
+
+</script>
+</head>
+<body>
+enter value1:<input type=text id="first"><br>
+enter value 2:<input type=text id="second"><br>
+<button onclick="add()">ADD</button>
+<input id="answer">
+</body>
+</html>
